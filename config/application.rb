@@ -1,7 +1,7 @@
 require_relative 'boot'
 
 require "rails"
-# Pick the frameworks you want:
+# Pick the frameworks a want:
 require "active_model/railtie"
 require "active_job/railtie"
 require "active_record/railtie"
@@ -20,7 +20,6 @@ module MDAAPortolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-    config.action_controller.permit_all_parameters = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
